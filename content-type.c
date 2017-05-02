@@ -26,7 +26,7 @@ ct_strstr(char *in)
 		in[i] = tolower(in[i]);
 	}
 
-	char *r = strstr(in, "content-type");
+	char *r = strstr(in, "content-type:");
 
 	return r - in;
 
