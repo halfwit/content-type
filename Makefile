@@ -3,7 +3,8 @@
 
 SRC = content-type.c
 OBJ = ${SRC:.c=.o}
-LDFLAGS = -lcurl
+CFLAGS = -I/usr/local/include
+LDFLAGS = -lcurl -L/usr/local/lib
 
 all: content-type
 
